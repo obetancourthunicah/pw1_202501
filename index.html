@@ -1,59 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portales Web I Sección 1801</title>
-    </head>
-    <body>
-        <h1 id="idx">Portales Web I Primer Parcial</h1>
 
-        <ul>
-            <li><a href="#ch1">Representación de Contenido de Texto</a></li>
-            <li><a href="#ch2">Listas Ordenadas y No Ordenadas</a></li>
-            <li><a href="#ch3">Hiperviculos y Navegación</a></li>
-            <li><a href="#ch4">Multimedia</a></li>
-            <li><a href="#ch5">Tablas</a></li>
-            <li><a href="#ch6">Formularios</a></li>
-            <li><a href="#ch7">Contenedores Semánticos</a></li>
-        </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portales Web I</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
 
-        <h2 id="ch1">Representación de Contenido de Texto</h2>
-        <h3>Encabezados</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-            similique reiciendis perspiciatis accusantium labore commodi animi
-            voluptatibus vitae dignissimos corrupti quia asperiores ad repellendus
-            aperiam eligendi, voluptates error ipsa quibusdam? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit.  Asperiores, numquam esse, culpas
-            uscipit id nostrum delectus veritatis corrupti rem unde vero dicta
-            quaerat qui illum aspernatur non cupiditate! Illum, hic!
-        </p>
-        <p>
-            hypertext markup language -> HTML
-        </p>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-            similique reiciendis perspiciatis accusantium labore commodi animi
-            voluptatibus vitae dignissimos corrupti quia asperiores ad repellendus
-            aperiam eligendi, voluptates error ipsa quibusdam? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Asperiores, numquam esse, culpas
-            uscipit id nostrum delectus veritatis corrupti rem unde vero dicta
-            quaerat qui illum aspernatur non cupiditate! Illum, hic!
-        </p>
-        <h3>Párrafos</h3>
-        <h4>Lorem Ipsum</h4>
-        <a href="#idx">Ir al Inicio</a>
-        <h2 id="ch2">Listas Ordenadas y No Ordenadas</h2>
-        <h3>Listas No Ordenadas</h3>
-        <p>
-            Son listas que no establece un orden particular, simplemente enuncian
-            elementos comunes de un dominio.
-            <!-- ul  un-order list -->
+<body>
+    <header>
+        <div>
+            <img src="https://picsum.photos/id/96/64/64" alt="Brand Logo" />
+            <h1 id="idx">Portales Web I</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ch1" title="Representación de Textos en HTML">Textos</a></li>
+                <li><a href="#ch2" title="Listas Ordenadas y No Ordenadas">Listas</a></li>
+                <li><a href="#ch3" title="Hiperviculos y Navegación">Hipervículos</a></li>
+                <li><a href="#ch4">Multimedia</a></li>
+                <li><a href="#ch5">Tablas</a></li>
+                <li><a href="#ch6">Formularios</a></li>
+                <li><a href="#ch7">Contenedores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <h2 id="ch1">Representación de Contenido de Texto</h2>
+            <h3>Encabezados</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+                similique reiciendis perspiciatis accusantium labore commodi animi
+                voluptatibus vitae dignissimos corrupti quia asperiores ad repellendus
+                aperiam eligendi, voluptates error ipsa quibusdam? Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Asperiores, numquam esse, culpas
+                uscipit id nostrum delectus veritatis corrupti rem unde vero dicta
+                quaerat qui illum aspernatur non cupiditate! Illum, hic!
+            </p>
+            <p>
+                hypertext markup language -> HTML
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
+                similique reiciendis perspiciatis accusantium labore commodi animi
+                voluptatibus vitae dignissimos corrupti quia asperiores ad repellendus
+                aperiam eligendi, voluptates error ipsa quibusdam? Lorem ipsum dolor sit,
+                amet consectetur adipisicing elit. Asperiores, numquam esse, culpas
+                uscipit id nostrum delectus veritatis corrupti rem unde vero dicta
+                quaerat qui illum aspernatur non cupiditate! Illum, hic!
+            </p>
+            <h3>Párrafos</h3>
+
+            <section class="cardContainer">
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <div class="cardBody">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
+                    </div>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <div class="cardBody">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
+                    </div>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <div class="cardBody">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
+                    </div>
+                    <div class="cardFooter">
+                        <button>Agregar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="demoEMRem">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nisi explicabo fuga error temporibus? Natus explicabo perferendis quo vero laborum voluptate, minima ipsa temporibus repudiandae adipisci! Quasi eos suscipit cupiditate.</p>
+            </section>
+            <h4>Lorem Ipsum</h4>
+            <a href="#idx" id="demo">Ir al Inicio</a>
+            <h2 id="ch2">Listas Ordenadas y No Ordenadas</h2>
+            <h3>Listas No Ordenadas</h3>
+            <p>
+                Son listas que no establece un orden particular, simplemente enuncian
+                elementos comunes de un dominio.
+                <!-- ul  un-order list -->
             <ul>
                 <li>
                     <!-- li  list item -->
-                     Huevos
+                    Huevos
                 </li>
                 <li>
                     Leche
@@ -78,10 +122,10 @@
                     </ul>
                 </li>
             </ul>
-        </p>
-        <h3>Lista Ordenadas</h3>
-        <p>
-            Lista ordeanadas si establecen un sentido de orden (jerarquía).
+            </p>
+            <h3>Lista Ordenadas</h3>
+            <p>
+                Lista ordeanadas si establecen un sentido de orden (jerarquía).
             <ol>
                 <li>Motagua</li>
                 <li>Maratón</li>
@@ -96,63 +140,158 @@
                     </ol>
                 </li>
             </ol>
-        </p>
-        <a href="#idx">Ir al Inicio</a>
-        <h2 id="ch3">Hiperviculos y Navegación</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut quia inventore repellendus error nam cum porro, laboriosam, aspernatur consequatur expedita nobis at molestiae laborum maxime fugit. Aspernatur, ullam autem?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam aliquid saepe sequi ipsa dignissimos error ratione! Nihil vitae animi omnis ab asperiores, sunt totam consequatur, labore non id ratione.</p>
-        <p>
-            Hiperviculos relativos  van a documentos dentro del mismo sitio <br/>
-            <a href="relativos.html">Ir a Página Relativa</a><br/>
-            <a href="tercerparcial/introjavascript.html">Ir a Página Intro de Javascript</a>
+            </p>
+            <a href="#idx">Ir al Inicio</a>
+            <h2 id="ch3">Hiperviculos y Navegación</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut quia inventore repellendus error nam
+                cum
+                porro, laboriosam, aspernatur consequatur expedita nobis at molestiae laborum maxime fugit. Aspernatur,
+                ullam autem?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam aliquid saepe sequi ipsa
+                dignissimos
+                error ratione! Nihil vitae animi omnis ab asperiores, sunt totam consequatur, labore non id ratione.</p>
+            <p>
+                Hiperviculos relativos van a documentos dentro del mismo sitio <br />
+                <a href="relativos.html">Ir a Página Relativa</a><br />
+                <a href="tercerparcial/introjavascript.html">Ir a Página Intro de Javascript</a>
 
-        </p>
-        <!--  https://www.unicah.edu:9090/algo/pagina.html    -->
+            </p>
+            <!--  https://www.unicah.edu:9090/algo/pagina.html    -->
 
-        <!--  (protocolo)://(subdominio).(dominio)[:puerto][/recurso]  -->
-        <!--  Linux Apache2 nginx   var/www/http/  wamp xamp http/ -->
-        <!--  Recurso predeterminado   index.html -->
+            <!--  (protocolo)://(subdominio).(dominio)[:puerto][/recurso]  -->
+            <!--  Linux Apache2 nginx   var/www/http/  wamp xamp http/ -->
+            <!--  Recurso predeterminado   index.html -->
 
-        <p>
-            <a href="https://www.unicah.edu" target="_blank">UNICAH</a>
-        </p>
-        <a href="#idx">Ir al Inicio</a>
-        <h2 id="ch4">Multimedia</h2>
-        <h3>Imágenes</h3>
-        <p>Una imágen valen por mil palabras.</p>
-        <h4>Dos tipos de imágenes</h4>
-        <ol>
-            <li>
-                Mapas de Bits: photoshop, gimp, ilustrator
-                <p>
-                    Dimensiones: Alto, Ancho px <br/>
-                    ppp (puntos por pulgada):   <br/>
-                    dpi (dots per inch):
-                </p>
-            </li>
-            <li>Vectoriales: Inkscape, Corel Draw, Ilustrator, Sketchbook</li>
-        </ol>
+            <p>
+                <a href="https://www.unicah.edu" target="_blank">UNICAH</a>
+            </p>
+            <a href="#idx">Ir al Inicio</a>
+            <h2 id="ch4">Multimedia</h2>
+            <h3>Imágenes</h3>
+            <p>Una imágen valen por mil palabras.</p>
+            <h4>Dos tipos de imágenes</h4>
+            <ol>
+                <li>
+                    Mapas de Bits: photoshop, gimp, ilustrator
+                    <p>
+                        Dimensiones: Alto, Ancho px <br />
+                        ppp (puntos por pulgada): <br />
+                        dpi (dots per inch):
+                    </p>
+                </li>
+                <li>Vectoriales: Inkscape, Corel Draw, Ilustrator, Sketchbook</li>
+            </ol>
 
-        <img src="imgs/selfie_web.jpg" alt="Foto de Perfil" />
+            <img src="imgs/selfie_web.jpg" alt="Foto de Perfil" />
 
-        <picture>
-            <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)"/>
-            <source srcset="https://picsum.photos/id/212/1024/640" media="(min-width:481px)"/>
-            <img src="https://picsum.photos/id/212/480/480" alt="Calle en Paris" />
-        </picture>
+            <picture>
+                <source srcset="https://picsum.photos/id/212/1200/720" media="(min-width:1025px)" />
+                <source srcset="https://picsum.photos/id/212/1024/640" media="(min-width:481px)" />
+                <img src="https://picsum.photos/id/212/480/480" alt="Calle en Paris" />
+            </picture>
 
-        <audio controls>
-            <source src="multimedia/horse.mp3" type="audio/mp3" />
-            <source src="multimedia/horse.ogg" type="audio/vorbis" />
-        </audio>
-        <video controls>
-            <source srcset="ultimedia/mov_bbb.mp4" type="video/mp4"  media="(min-width:1024)" />
-            <source src="multimedia/mov_bbb.mp4" type="video/mp4" />
-            <source src="multimedia/mov_bbb.ogg" type="video/vorbis" />
-        </video>
+            <audio controls>
+                <source src="multimedia/horse.mp3" type="audio/mp3" />
+                <source src="multimedia/horse.ogg" type="audio/vorbis" />
+            </audio>
+            <video controls>
+                <source srcset="ultimedia/mov_bbb.mp4" type="video/mp4" media="(min-width:1024)" />
+                <source src="multimedia/mov_bbb.mp4" type="video/mp4" />
+                <source src="multimedia/mov_bbb.ogg" type="video/vorbis" />
+            </video>
 
-        <h2 id="ch5">Tablas</h2>
-        <h2 id="ch6">Formularios</h2>
-        <h2 id="ch7">Contenedores Semánticos</h2>
-    </body>
+            <h2 id="ch5">Tablas</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum ex et enim! Corporis facere ipsa
+                aliquam
+                quibusdam aliquid sint perspiciatis commodi odio laudantium inventore saepe vitae, esse veritatis ut.
+            </p>
+
+            <table border="4">
+                <thead>
+                    <tr>
+                        <th colspan="6">Tabla de Ventas Promedio del 2025 de la Trucha de Doña Lidia</th>
+                    </tr>
+                    <tr>
+                        <th>Región</th>
+                        <th>Ciudad</th>
+                        <th>Q1</th>
+                        <th>Q2</th>
+                        <th>Q3</th>
+                        <th>Q4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Norte</td>
+                        <td>La Ceiba</td>
+                        <td>80</td>
+                        <td>76</td>
+                        <td>84</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>San Pedro Sula</td>
+                        <td>90</td>
+                        <td>91</td>
+                        <td>89</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Centro</td>
+                        <td>Comayagua</td>
+                        <td>82</td>
+                        <td>83</td>
+                        <td>82</td>
+                        <td>83</td>
+                    </tr>
+                    <tr>
+                        <td>Tegucigalpa</td>
+                        <td>87</td>
+                        <td>88</td>
+                        <td>87</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Danli</td>
+                        <td>81</td>
+                        <td>82</td>
+                        <td>81</td>
+                        <td>81</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Sur</td>
+                        <td>Choluteca</td>
+                        <td>84</td>
+                        <td>84</td>
+                        <td>84</td>
+                        <td>84</td>
+                    </tr>
+                    <tr>
+                        <td>San Marcos de Colón</td>
+                        <td>70</td>
+                        <td>78</td>
+                        <td>78</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Promedio</td>
+                        <td>87</td>
+                        <td>89</td>
+                        <td>84</td>
+                        <td>88</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h2 id="ch6">Formularios</h2>
+            <h2 id="ch7">Contenedores Semánticos</h2>
+        </div>
+    </main>
+    <footer>
+        Copyright 2025 ICC UNICAH
+    </footer>
+</body>
+
 </html>

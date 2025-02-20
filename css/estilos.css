@@ -1,0 +1,129 @@
+* {
+     box-sizing: border-box;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+}
+
+header div{
+    display:flex;
+    align-items: center;
+}
+header div h1{
+    font-size: 1.1rem;
+    margin:0px;
+    color: #fff;
+}
+header div img {
+    display: block;
+    width:64px;
+    height: 64px;
+    border-radius: 50%;
+    margin:0.1rem 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding:0px;
+    gap:0.5rem;
+}
+
+header nav ul li a{
+    display: inline-block;
+    color: #fff;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    /*
+    padding: 0.75rem 1.5rem;
+    padding: 0.75rem;
+    */
+    /*
+    margin: 0.75rem 1.5rem 0.75rem 1.5rem;
+    margin: 0.75rem 1.5rem;
+    margin: 0.75rem;
+    */
+    text-decoration: none;
+    text-align: center;
+    /* Trouble  TRBL  Top Right Bottom Left */
+}
+
+header nav ul li a:hover {
+    background-color: beige;
+    color:#000;
+}
+
+
+.contenedor {
+    max-width:1024px;
+    margin: 0.5rem auto;
+    padding:0.5rem;
+}
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    overflow: hidden;
+    width: 320px;
+    border:1px solid #000;
+    border-radius: 9px;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.card img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card .cardBody {
+    padding:0.5rem;
+}
+
+.card .cardFooter button {
+    background-color: darkcyan;
+    color:#fff;
+    width:100%;
+    border: 1px solid darkslateblue;
+    padding:0.85rem 0.75rem;
+}
+
+/*
+Unidades de Longitud
+
+Absolutas
+1px
+1cm
+1in
+1yd
+
+Relativas
+100%
+100vh
+100vw
+1em
+1rem
+
+*/
+
+.demoEMRem {
+    font-size: 2em;
+}
+
+.demoEMRem p {
+    font-size:2rem
+}

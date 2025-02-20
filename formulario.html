@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="formulario.html" method="POST" >
+        <label for="txtPrimerNombre">Primer Nombre:</label>
+        <input type="text" name="txtPrimerNombre" id="txtPrimerNombre"
+            placeholder="Primer Nombre"
+            title="Primer Nombre del Solicitante de la Transacción del Proceso XYZ" />
+        <br/>
+        <label for="txtApellidoPaterno">Apellido:</label>
+        <input type="text" name="txtApellidoPaterno" id="txtApellidoPaterno"
+            placeholder="Apellido Paterno" />
+        <br/>
+        <label for="intEdad">Edad:</label>
+        <input type="number" name="intEdad" id="intEdad"
+            min="0" max="100" step="5" value="0"
+            placeholder="Edad del Solicitante" />
+        <br/>
+        <label for="Contrasenia">Contraseña:</label>
+        <input type="password" name="Contrasenia" id="Contrasenia"
+            placeholder="8 caracteres, 1 Mayúscula, 1 Símbolo y un Número" />
+        <br/>
+        <label>Color Preferido</label><br/>
+        <input type="radio" name="cmbColor" value="red" id="cmbColorRed" checked/>
+        <label for="cmbColorRed">&nbsp;Rojo</label>
+       <br/>
+        <input type="radio" name="cmbColor" value="blue" id="cmbColorBlue" />
+        <label for="cmbColorBlue">&nbsp;Azul</label>
+        <br/>
+        <input type="radio" name="cmbColor" value="green" id="cmbColorGreen" />
+        <label for="cmbColorGreen">&nbsp;Verde</label>
+        <br/>
+        <label for="cmbPaises">País de Origen:</label>
+        <br/>
+        <select name="cmbPais" id="cmbPaises">
+            <option value="HND">Honduras</option>
+            <option value="ESL">El Salvador</option>
+            <option value="NIC">Nicaragua</option>
+            <option value="GTL">Guatemala</option>
+            <option value="CTR" selected>Costa Rica</option>
+            <option value="ARG">Argentina</option>
+            <option value="CHL">Chile</option>
+        </select>
+        <br/>
+        <label for="txtBio">Bio Description:</label><br/>
+        <textarea
+            id="txtBio"
+            name="txtBio"
+            cols="50"
+            rows="8"
+            placeholder="Esto es un Texto Largo"
+        ></textarea>
+        <input type="submit" name="btnEnviar" id="btnEnviar" value="Enviar" />
+        &nbsp;
+        <button type="submit" name="btnEnviar2" id="btnEnviar2">&#x1F49A;<strong>Enviar</strong></button>
+    </form>
+</body>
+</html>
