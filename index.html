@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portales Web I</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <script>
+        let mensajeAMostrar = "CLick al presions ID Ch1";
+        document.addEventListener("DOMContentLoaded", ()=>{
+            let ch1Element = document.getElementById("ch1");
+            ch1Element.addEventListener("click", (e)=>{
+                e.preventDefault();
+                e.stopPropagation();
+                alert("Click al Presiona ID Ch1");
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
         <div>
             <img src="https://picsum.photos/id/96/64/64" alt="Brand Logo" />
-            <h1 id="idx">Portales Web I</h1>
+            <h1 id="idx" onclick="alert('Clicked on H1 Portales Web I')">Portales Web I</h1>
         </div>
         <nav>
             <ul>
@@ -27,6 +40,43 @@
         </nav>
     </header>
     <main>
+        <section class="carrusel">
+            <section class="track">
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/45/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/45/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/45/400/400"  alt="Hero Panel Image"/>
+                    </picture>
+                    <div class="q2">
+                        <h2>Clase de Portales Web I</h2>
+                        <a href="" class="btn accent">Matricularse</a>
+                    </div>
+                </section>
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/46/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/46/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/46/400/400"  alt="Hero Panel Image"/>
+                    </picture>
+                    <div class="q3">
+                        <h2>Slide 2</h2>
+                        <a href="" class="btn accent">Matricularse</a>
+                    </div>
+                </section>
+                <section class="hero-panel">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/47/1300/900" media="(min-width:1025px)" />
+                        <source srcset="https://picsum.photos/id/47/1024/720" media="(min-width:768px)" />
+                        <img src="https://picsum.photos/id/47/400/400"  alt="Hero Panel Image"/>
+                    </picture>
+                    <div class="q1">
+                        <h2>Slide 3</h2>
+                        <a href="" class="btn accent">Matricularse</a>
+                    </div>
+                </section>
+            </section>
+        </section>
         <div class="contenedor">
             <h2 id="ch1">Representación de Contenido de Texto</h2>
             <h3>Encabezados</h3>
@@ -64,7 +114,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <img src="https://picsum.photos/id/141/300/200" alt="Imágen de Tarjeta" />
                     <div class="cardBody">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
                     </div>
@@ -73,7 +123,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://picsum.photos/id/140/300/200" alt="Imágen de Tarjeta" />
+                    <img src="https://picsum.photos/id/144/300/200" alt="Imágen de Tarjeta" />
                     <div class="cardBody">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
                     </div>
@@ -81,6 +131,42 @@
                         <button>Agregar</button>
                     </div>
                 </div>
+            </section>
+            <section>
+                <div>
+                    <img src="https://placehold.co/64x64" alt="Profile Pic">
+                    <div>
+                        <em>Este es mi Testimonio de lo bueno que es PW</em>
+                    </div>
+                    <div>
+                        obetancourthunicah@gmail.com
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="cardContainer">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/159/300/200" alt="Imágen de Tarjeta" />
+                            <div class="cardBody">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
+                            </div>
+                            <div class="cardFooter">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://picsum.photos/id/240/300/200" alt="Imágen de Tarjeta" />
+                            <div class="cardBody">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium reiciendis maxime.
+                            </div>
+                            <div class="cardFooter">
+                                <button>Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
             </section>
 
             <section class="demoEMRem">
@@ -94,32 +180,49 @@
                 Son listas que no establece un orden particular, simplemente enuncian
                 elementos comunes de un dominio.
                 <!-- ul  un-order list -->
-            <ul>
+            <ul class="smallTags">
                 <li>
-                    <!-- li  list item -->
-                    Huevos
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Huevos</span>
+                    </div>
                 </li>
                 <li>
-                    Leche
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Leches</span>
+                    </div>
                 </li>
                 <li>
-                    Frijoles
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Frijoles</span>
+                    </div>
                 </li>
                 <li>
-                    Pan
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Pan</span>
+                    </div>
                 </li>
                 <li>
-                    Café
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Café</span>
+                    </div>
                 </li>
                 <li>
-                    Chucherías
-                    <ul>
-                        <li>Zambos Salsa Verde</li>
-                        <li>Pringles Cebolla</li>
-                        <li>Chips Habaneros</li>
-                        <li>Palitos Diana</li>
-                        <li>Snickers</li>
-                    </ul>
+                    <div>
+                        <img src="https://placehold.co/180x64" alt="Img Inline" />
+                        <span>Chucherías</span>
+                        <ul>
+                            <li>Zambos Salsa Verde</li>
+                            <li>Pringles Cebolla</li>
+                            <li>Chips Habaneros</li>
+                            <li>Palitos Diana</li>
+                            <li>Snickers</li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
             </p>
@@ -143,6 +246,73 @@
             </p>
             <a href="#idx">Ir al Inicio</a>
             <h2 id="ch3">Hiperviculos y Navegación</h2>
+
+            <section class="grid">
+                <div class="row">
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                    <div class="col-1">1</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                    <div class="col-2">2</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                    <div class="col-3">3</div>
+                </div>
+                <div class="row">
+                    <div class="col-4">4</div>
+                    <div class="col-4">4</div>
+                    <div class="col-4">4</div>
+                </div>
+            </section>
+            <section class="grid">
+                <div class="row center">
+                    <div class="col-3">
+                        <img src="https://placehold.co/180x300" alt="Profile Picture" />
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam vero ex provident tenetur obcaecati, nostrum temporibus, dolor facilis, laboriosam dolorem! Sint deserunt, officia at atque itaque maiores est exercitationem.</p>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12 centerX">
+                                        Abc
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 centerX">
+                                        Abcd
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 centerX">
+                                        Abdce
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aut quia inventore repellendus error nam
                 cum
                 porro, laboriosam, aspernatur consequatur expedita nobis at molestiae laborum maxime fugit. Aspernatur,

@@ -1,0 +1,47 @@
+.grid {
+    display:flex;
+    flex-direction: column;
+}
+
+.grid .row{
+    display:flex;
+    flex:1 0 100%;
+    flex-direction: row;
+}
+
+.grid .center{
+    justify-content: center;
+    align-items: center;
+}
+.grid .centerY{
+    align-items: center;
+}
+.grid .centerX{
+    justify-content: center;
+}
+
+.grid .row .centerY {
+    align-self: center;
+}
+
+.grid .row .centerX {
+    justify-content: center;
+}
+
+.grid .row [class*=col-] {
+    border: 1px solid #000;
+    padding:0.25rem 0.5rem;
+}
+.grid .row .col-1 { flex: 0 0 calc(100% / 12); }
+.grid .row .col-2 { flex: 0 0 calc(100% / 12 * 2); }
+.grid .row .col-3 { flex: 0 0 calc(100% / 12 * 3); }
+.grid .row .col-4 { flex: 0 0 calc(100% / 12 * 4); }
+.grid .row .col-5 { flex: 0 0 calc(100% / 12 * 5); }
+.grid .row .col-6 { flex: 0 0 calc(100% / 12 * 6); }
+.grid .row .col-7 { flex: 0 0 calc(100% / 12 * 7); }
+.grid .row .col-8 { flex: 0 0 calc(100% / 12 * 8); }
+.grid .row .col-9 { flex: 0 0 calc(100% / 12 * 9); }
+.grid .row .col-10 { flex: 0 0 calc(100% / 12 * 10); }
+.grid .row .col-11 { flex: 0 0 calc(100% / 12 * 11); }
+.grid .row .col-12 { flex: 0 0 100%; }
+
