@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     let btnLeft = null;
     let btnRight = null;
+    let nav = null;
     let timeoutID = null;
     let currentSlide = 0;
     let direction = 1; // 1 derecha  -1 Izquierda
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
             direction = -1;
         }
         renderSlide(nextSlide);
-        tickFunction();
     }
 
     function renderSlide(moveTo) {
@@ -42,41 +42,57 @@ document.addEventListener("DOMContentLoaded", () => {
             clearTimeout(timeoutID);
         }
         track.style.transform = `translateX(calc(100vw * ${moveTo * -1}))`;
+
+        nav.children[currentSlide].classList.remove('active');
+        nav.children[moveTo].classList.add('active');
+
+        // nav.querySelectorAll('button').forEach((dot, index)=>{
+        //     if (index == moveTo) {
+        //         dot.classList.add('active');
+        //     } else {
+        //         dot.classList.remove('active');
+        //     }
+        // });
+
+        //slides[currentSlide].querySelector('img').style.transform = "scale(1)";
+        //slides[moveTo].querySelector('img').style.transform = "scale(1.5)";
         currentSlide = moveTo;
         tickFunction();
     }
 
     function renderNavigation() {
-        // Generando los botones laterales
         btnLeft = document.createElement('BUTTON');
-        btnRight = document.createElement('BUTTON');
         btnLeft.textContent = "<";
-        btnRight.textContent = ">";
-        btnLeft.classList.add('btn-left');
-        btnRight.classList.add('btn-right');
-        btnLeft.addEventListener("click", () => {
-            if (currentSlide > 0) {
-                renderSlide(currentSlide - 1);
+        btnLeft.classList.add("btn-left");
+        btnLeft.addEventListener('click', ()=>{
+            if(currentSlide > 0) {
+                renderSlide(currentSlide -1);
             }
         });
-        btnRight.addEventListener("click", () => {
-            if (currentSlide < slidesTopLimit) {
+        btnRight = document.createElement('BUTTON');
+        btnRight.textContent = ">";
+        btnRight.classList.add("btn-right");
+        btnRight.addEventListener('click', ()=>{
+            if(currentSlide < slidesTopLimit) {
                 renderSlide(currentSlide + 1);
             }
         });
         carrusel.appendChild(btnLeft);
         carrusel.appendChild(btnRight);
-        // Generando los botones inferiores
-        let nav = document.createElement('DIV');
+
+
+        nav = document.createElement("DIV");
         nav.classList.add('nav');
-        slides.forEach((slide, index) => {
-            let dot = document.createElement('BUTTON');
-            dot.textContent = index + 1;
-            dot.addEventListener("click", () => {
-                renderSlide(index);
-            });
-            nav.appendChild(dot);
-        });
+        slides.forEach(
+            (slide, index)=>{
+                const btn = document.createElement("BUTTON");
+                btn.textContent = (index + 1);
+                btn.addEventListener('click', ()=>{
+                    renderSlide(index);
+                });
+                nav.appendChild(btn);
+            }
+        );
         carrusel.appendChild(nav);
     }
 

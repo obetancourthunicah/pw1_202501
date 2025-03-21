@@ -191,9 +191,9 @@ Relativas
     position: absolute;
     top:0px;
     left:0px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
-.carrusel  button[class*='btn'] {
+.carrusel button[class*='btn'] {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -203,6 +203,7 @@ Relativas
     padding: 2.5rem 1rem;
     border-radius: 9px;
     box-shadow: 1px 1px 3px #000;
+    cursor: pointer;
     z-index: 999;
 }
 
@@ -216,9 +217,13 @@ Relativas
 
 .carrusel  button.btn-left {
     left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 .carrusel  button.btn-right {
     right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .carrusel div.nav{
@@ -226,16 +231,33 @@ Relativas
     justify-content: center;
     gap: 0.5rem;
     position: absolute;
-    bottom: 0px;
+    bottom: 7px;
     left: 50%;
     transform: translateX(-50%);
 }
+
+.carrusel div.nav button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color:#333;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.carrusel div.nav button.active{
+    background-color: #333;
+    color:#fff;
+}
+
 
 .hero-panel {
     flex: 0 0 100%;
     position: relative;
     width: 100%;
     height: 80vh;
+    overflow: hidden;
 }
 
 .hero-panel img {
@@ -243,6 +265,7 @@ Relativas
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 1.5s ease-in-out transform
 }
 
 .hero-panel div {
