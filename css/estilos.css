@@ -312,6 +312,43 @@ Relativas
     box-shadow: 1px 1px 3px #1c3448;
 }
 
+form {
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+form div {
+    flex:1 1 100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:0.5rem;
+}
+form div label {
+    font-weight: bold;
+    width: 30%;
+}
+
+form div input {
+    font-size:1rem;
+    padding:0.25rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+form div button {
+    font-size:1rem;
+    padding:0.25rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+.right {
+    justify-content:flex-end;
+}
 /*
 Media Queries
 Consultar Metdata del dispositivo
