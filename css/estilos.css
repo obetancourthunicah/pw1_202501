@@ -322,7 +322,14 @@ form div {
     display:flex;
     flex-direction:row;
     align-items: center;
+    flex-wrap: wrap;
     gap:0.5rem;
+}
+form div div.error {
+    color: red;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.25rem 1rem 0.5rem 1rem;
 }
 form div label {
     font-weight: bold;
@@ -334,7 +341,11 @@ form div input {
     padding:0.25rem 0.5rem;
     border-radius: 3px;
     border: 1px solid #ccc;
-    width: 70%;
+    width: 60%;
+}
+form div input.error {
+    border-color: red;
+    outline-color: red;
 }
 
 form div button {
@@ -345,6 +356,7 @@ form div button {
     background-color: #333;
     color: #fff;
 }
+
 
 .right {
     justify-content:flex-end;
