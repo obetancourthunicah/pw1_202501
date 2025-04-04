@@ -1,0 +1,116 @@
+{
+    "titulo": "Ingeniería en Ciencias de la Computación",
+    "codigo": "IF0102",
+    "plan": [
+        {
+            "bloque": "I",
+            "key": 1,
+            "asignaturas": [
+                {
+                    "codigo":"IF101",
+                    "descripcion": "Informática 1",
+                    "creditos": 3,
+                    "requisitos": []
+                },
+                {
+                    "codigo":"ES101",
+                    "descripcion": "Español 1",
+                    "creditos": 3,
+                    "requisitos": []
+                },
+                {
+                    "codigo":"MT101",
+                    "descripcion": "Matemáticas 1",
+                    "creditos": 4,
+                    "requisitos": []
+                },
+                {
+                    "codigo":"FI101",
+                    "descripcion": "Filosofía",
+                    "creditos": 3,
+                    "requisitos": []
+                },
+                {
+                    "codigo":"HS101",
+                    "descripcion": "Historia de Honduras",
+                    "creditos": 3,
+                    "requisitos": []
+                }
+            ]
+        },
+        {
+            "bloque": "II",
+            "key": 2,
+            "asignaturas": [
+                {
+                    "codigo":"IF102",
+                    "descripcion": "Informática 3",
+                    "creditos": 3,
+                    "requisitos": ["IF101"]
+                },
+                {
+                    "codigo":"ES102",
+                    "descripcion": "Expreción Oral y Escrita",
+                    "creditos": 3,
+                    "requisitos": ["ES101"]
+                },
+                {
+                    "codigo":"MT102",
+                    "descripcion": "Precálculo",
+                    "creditos": 4,
+                    "requisitos": ["MT101"]
+                },
+                {
+                    "codigo":"MT201",
+                    "descripcion": "Estadística 1",
+                    "creditos": 4,
+                    "requisitos": ["MT101"]
+                },
+                {
+                    "codigo":"IF201",
+                    "descripcion": "Fundamento y Lógica de Programación",
+                    "creditos": 3,
+                    "requisitos": ["IF101"]
+                }
+            ]
+        },
+        {
+            "bloque": "III",
+            "key": 3,
+            "asignaturas": [
+                {
+                    "codigo":"IF203",
+                    "descripcion": "Programación Estructurada 1",
+                    "creditos": 3,
+                    "requisitos": ["IF201"]
+                },
+                {
+                    "codigo":"SC101",
+                    "descripcion": "Sociología",
+                    "creditos": 3,
+                    "requisitos": ["FI101"]
+                },
+                {
+                    "codigo":"MT103",
+                    "descripcion": "Cálculo",
+                    "creditos": 4,
+                    "requisitos": ["MT102"]
+                },
+                {
+                    "codigo":"MT202",
+                    "descripcion": "Estadística Aplicada a Negocios",
+                    "creditos": 4,
+                    "requisitos": ["MT201"]
+                },
+                {
+                    "codigo":"IF202",
+                    "descripcion": "Análisis y Diseño de Software",
+                    "creditos": 3,
+                    "requisitos": ["IF201"]
+                }
+            ]
+        }
+
+
+    ]
+}
